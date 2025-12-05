@@ -26,13 +26,13 @@
   margin-top: 150px;
   text-align: center;
   font-weight: 600;
-  /* background-image: url(../assets/Images/timeline.svg) !important; */
-  background: linear-gradient(90deg, #9e3a3a, #be5840, #db7844, #f49b48, #f8bb4b, #e7d458, #d3eb72, #c0ff94);
+  background: linear-gradient(90deg, #1e3a8a, #2563eb, #3b82f6, #60a5fa, #7dd3fc, #93c5fd, #bfdbfe, #dbeafe);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: drop-shadow(0 0 20px rgba(96, 165, 250, 0.3));
 }
 
 
@@ -107,11 +107,12 @@
 }
 
 .SponsorDetails a:hover {
-  color: var(--primary-blue-color);
+  color: #60a5fa;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
 }
 
 .SponsorDetails h4 {
-  color: var(--primary-blue-color);
+  color: #3b82f6;
 }
 
 @media screen and (max-width: 900px) {

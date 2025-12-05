@@ -22,6 +22,54 @@
 </head>
 
 <body class="background">
+    <!-- Tech background effects -->
+    <div class="scanning-line"></div>
+    <div class="corner-accent top-left"></div>
+    <div class="corner-accent top-right"></div>
+    <div class="corner-accent bottom-left"></div>
+    <div class="corner-accent bottom-right"></div>
+    
+    <!-- Floating orbs -->
+    <div class="floating-orb"></div>
+    <div class="floating-orb"></div>
+    <div class="floating-orb"></div>
+    
+    <!-- Hexagon pattern overlay -->
+    <div class="hexagon-pattern"></div>
+    
+    <!-- Data streams -->
+    <div class="data-stream"></div>
+    <div class="data-stream"></div>
+    <div class="data-stream"></div>
+    
+    <!-- Circuit lines -->
+    <div class="circuit-line horizontal"></div>
+    <div class="circuit-line vertical"></div>
+    
+    <script>
+        // Create floating tech particles
+        function createParticles() {
+            const background = document.querySelector('.background');
+            const particleCount = 20;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('tech-particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+                background.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', createParticles);
+        } else {
+            createParticles();
+        }
+    </script>
+    
     <div class="Navbar" id="navbar">
         <div class="topnav" id="myTopnav">
             <div class="logo">

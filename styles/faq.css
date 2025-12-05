@@ -27,12 +27,14 @@ html {
 
 .question,
 .answer {
-  background: linear-gradient(120deg, #9e3a3a, #ac4842, #ba574a, #c86552, #d6745a, #e48363, #f1926c, #ffa175);
-  border: 1px solid rgb(13, 17, 27);
-  border-radius: 0;
+  background: linear-gradient(120deg, rgba(30, 58, 138, 0.3), rgba(37, 99, 235, 0.3), rgba(59, 130, 246, 0.3));
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
   color: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
 }
 
 .q-text,
@@ -45,18 +47,16 @@ html {
 
 .FAQ {
   font-size: 4rem;
-  /* Use the desired font size */
   margin-top: 150px;
   text-align: center;
   font-weight: 600;
-  /* background-image: url("../assets/Images/timeline.svg") !important; */
-  background: linear-gradient(120deg, #9e3a3a, #af5439, #bc703a, #c48c3f, #c9a849, #cac55a, #c7e274, #c0ff94);
+  background: linear-gradient(120deg, #1e3a8a, #2563eb, #3b82f6, #60a5fa, #7dd3fc, #93c5fd, #bfdbfe, #dbeafe);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-
+  filter: drop-shadow(0 0 20px rgba(96, 165, 250, 0.4));
 }
 
 
@@ -68,20 +68,20 @@ html {
 
 
 .question {
-  background-color: #00111a;
+  background-color: rgba(30, 58, 138, 0.2);
   height: auto;
   display: flex;
-  border-left: solid 5px var(--fc-blue);
+  border-left: solid 5px #3b82f6;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 
 .answer {
-  background-color: #001f30ac;
+  background-color: rgba(30, 58, 138, 0.15);
   color: #fff;
   height: auto;
   display: flex;
-  border-left: solid 5px var(--card-blue-color);
+  border-left: solid 5px #60a5fa;
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -99,7 +99,7 @@ html {
 
 .a-span {
   font-size: 5vh;
-  color: var(--card-blue-color);
+  color: #60a5fa;
 }
 
 .a-text {
